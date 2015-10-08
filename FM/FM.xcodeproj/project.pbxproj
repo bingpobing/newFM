@@ -52,6 +52,7 @@
 		C255C7671BC6A98900EAF02C /* DetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C255C75B1BC6A98900EAF02C /* DetailCell.m */; };
 		C255C7681BC6A98900EAF02C /* ListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C255C75D1BC6A98900EAF02C /* ListCell.m */; };
 		C255C7691BC6A98900EAF02C /* RadioViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C255C75F1BC6A98900EAF02C /* RadioViewCell.m */; };
+		C255C76F1BC6B41200EAF02C /* Test11111ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C255C76E1BC6B41200EAF02C /* Test11111ViewController.m */; };
 		C26C86CA1BC69650001ED1E1 /* bofang.png in Resources */ = {isa = PBXBuildFile; fileRef = C26C86BB1BC69650001ED1E1 /* bofang.png */; };
 		C26C86CB1BC69650001ED1E1 /* bofangyemian.png in Resources */ = {isa = PBXBuildFile; fileRef = C26C86BC1BC69650001ED1E1 /* bofangyemian.png */; };
 		C26C86CC1BC69650001ED1E1 /* diantai.png in Resources */ = {isa = PBXBuildFile; fileRef = C26C86BD1BC69650001ED1E1 /* diantai.png */; };
@@ -188,6 +189,8 @@
 		C255C75D1BC6A98900EAF02C /* ListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListCell.m; sourceTree = "<group>"; };
 		C255C75E1BC6A98900EAF02C /* RadioViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioViewCell.h; sourceTree = "<group>"; };
 		C255C75F1BC6A98900EAF02C /* RadioViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioViewCell.m; sourceTree = "<group>"; };
+		C255C76D1BC6B41200EAF02C /* Test11111ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test11111ViewController.h; sourceTree = "<group>"; };
+		C255C76E1BC6B41200EAF02C /* Test11111ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test11111ViewController.m; sourceTree = "<group>"; };
 		C26C86BB1BC69650001ED1E1 /* bofang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bofang.png; sourceTree = "<group>"; };
 		C26C86BC1BC69650001ED1E1 /* bofangyemian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bofangyemian.png; sourceTree = "<group>"; };
 		C26C86BD1BC69650001ED1E1 /* diantai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diantai.png; sourceTree = "<group>"; };
@@ -498,6 +501,8 @@
 				C2E35BA31BC68CA000FB1685 /* LiebiaoTableViewController.m */,
 				C2E35BA41BC68CA000FB1685 /* PlayerController.h */,
 				C2E35BA51BC68CA000FB1685 /* PlayerController.m */,
+				C255C76D1BC6B41200EAF02C /* Test11111ViewController.h */,
+				C255C76E1BC6B41200EAF02C /* Test11111ViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -804,6 +809,7 @@
 				C23340541BC54DE10045EA8E /* MineController.m in Sources */,
 				C2FFA5BF1BC3EDA0004B69B0 /* DiscoverModel.m in Sources */,
 				C2E35B9A1BC6561600FB1685 /* XWAlterview.m in Sources */,
+				C255C76F1BC6B41200EAF02C /* Test11111ViewController.m in Sources */,
 				C255C7681BC6A98900EAF02C /* ListCell.m in Sources */,
 				C233408F1BC54E200045EA8E /* SDWebImageDecoder.m in Sources */,
 				C2FFA5B41BC3ED12004B69B0 /* DiscoverController.m in Sources */,
