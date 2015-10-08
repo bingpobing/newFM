@@ -10,6 +10,7 @@
 #import "Networking.h"
 #import "DetailModel.h"
 #import "DetailCell.h"
+#import "ListViewController.h"
 #define URL @"http://mobile.ximalaya.com/m/explore_album_list?category_name=radio&condition=hot&device=iPhone&page=1&per_page=20&status=0&tag_name=%@"
 #define Recent_URL @"http://mobile.ximalaya.com/m/explore_album_list?category_name=radio&condition=recent&device=iPhone&page=1&per_page=20&status=0&tag_name=%@"
 #define Classic_URL @"http://mobile.ximalaya.com/m/explore_album_list?category_name=radio&condition=classic&device=iPhone&page=1&per_page=20&status=0&tag_name=%@"
@@ -30,6 +31,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     self.title = _name;
     //导航栏size
     CGRect rectNav = self.navigationController.navigationBar.frame;
@@ -43,16 +45,19 @@
     [self.view addSubview:_Segment];
    
     _tab = [[UITableView alloc]initWithFrame:CGRectMake(0, _Segment.frame.origin.y + _Segment.frame.size.height,self.view.frame.size.width,self.view.frame.size.height - _Segment.frame.size.height - 49-rectNav.size.height - 20) style:UITableViewStyleGrouped];
-    _tab.backgroundColor = [UIColor whiteColor];
+    _tab.backgroundColor = [UIColor colorWithRed:0.562 green:0.683 blue:1.000 alpha:1.000];
     _tab.dataSource = self;
     _tab.delegate = self;
+    
     [_tab registerClass:[DetailCell class] forCellReuseIdentifier:@"cell"];
+    
     [self.view addSubview:_tab];
-
+    
     
     [self networking];
     
 }
+
 
 -(void)Action:(UISegmentedControl *)sender{
     if (sender.selectedSegmentIndex == 0) {
@@ -105,7 +110,7 @@
         
         [_tab reloadData];
     }];
-}
+  }
 }
 
 -(void)networking{
@@ -119,8 +124,8 @@
             model.title = dd[@"title"];
             model.picUrl = dd[@"albumCoverUrl290"];
             model.number = dd[@"playsCounts"];
+            model.ID = [dd[@"id"]floatValue];
             [_Array addObject:model];
-           // [_DIC setObject:model forKey:dd[@"id"]];
             [_DIC setObject:_Array forKey:DataDic[@"list"]];
            
         }
@@ -145,9 +150,19 @@
     NSString *key = self.DIC.allKeys[indexPath.section];
    NSArray *arr =self.DIC[key];
    DetailModel *model = arr[indexPath.row];
-    //DetailModel *model = self.DIC[key];
     cell.Detail = model;
+    cell.backgroundColor = [UIColor colorWithRed:0.562 green:0.683 blue:1.000 alpha:1.000];
     return cell;
+    
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    ListViewController *List = [ListViewController new];
+    NSString *key = self.DIC.allKeys[indexPath.section];
+    NSArray *arr =self.DIC[key];
+    DetailModel *model = arr[indexPath.row];
+    List.ID = model.ID;
+    [self.navigationController pushViewController:List animated:YES];
 }
 
 @end

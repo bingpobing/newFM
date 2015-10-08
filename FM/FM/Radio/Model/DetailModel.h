@@ -16,4 +16,6 @@
 
 @property(nonatomic , strong) NSString *number;
 
+@property(nonatomic , assign) NSInteger ID;
+
 @end

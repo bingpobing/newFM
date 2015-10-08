@@ -36,8 +36,8 @@
         _Detail = Detail;
     }
     [self.IMG sd_setImageWithURL:Detail.picUrl];
-    self.title.text = Detail.title;
-    self.number.text = [NSString stringWithFormat:@"%@", Detail.number];
+    self.title.text = [NSString stringWithFormat:@"📀:%@",Detail.title];
+    self.number.text = [NSString stringWithFormat:@"▷%@次", Detail.number];
 }
 
 
