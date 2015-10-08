@@ -24,46 +24,48 @@
                       clientKey:@"PupC2Jsgb9wzzaDOuyW8hExC"];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
+    
+    //1
     DiscoverController *discoverVC = [[DiscoverController alloc]initWithStyle:UITableViewStylePlain];
     UINavigationController *discoverNC = [[UINavigationController alloc]initWithRootViewController:discoverVC];
-    
+    discoverVC.title = @"发现";
+    UIImage *image1 = [UIImage imageNamed:@"faxian"];
+    discoverVC.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"发现" image:image1 selectedImage:image1];
 
-    UINavigationController *RadioNC = [[UINavigationController alloc]initWithRootViewController:[RadioController new]];
-    RadioNC.tabBarItem.title = @"电台";
-    RadioNC.tabBarItem.image = [UIImage imageNamed:@"iconfont-svgmoban16"];
+    //2
+    RadioController *radioVC = [[RadioController alloc]init];
+    UINavigationController *RadioNC = [[UINavigationController alloc]initWithRootViewController:radioVC];
+    radioVC.title = @"电台";
+    UIImage *image2 = [UIImage imageNamed:@"diantai"];
+    radioVC.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"电台" image:image2 selectedImage:image2];
     
-    
-    MineController *mineVC = [MineController new];
-    UINavigationController *mineNC = [[UINavigationController alloc]initWithRootViewController:mineVC];
-    
-    
+    //3
     PlayerController *playerVC = [[PlayerController alloc]init];
     UINavigationController *playerNC = [[UINavigationController alloc]initWithRootViewController:playerVC];
     playerVC.title = @"播放";
+    UIImage *image3 = [UIImage imageNamed:@"bofangyemian"];
+    playerVC.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"播放" image:image3 selectedImage:image3];
     
-    //图片必须是镂空的
-    UIImage *image4 = [UIImage imageNamed:@"bofangyemian"];
-    //图片渲染(保持原有的特性)(如果图片不是镂空的,必须渲染)
-    image4 = [image4 imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];//翻译;表现  //模式  //原始的;最初的
-    playerVC.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"播放" image:image4 selectedImage:image4];
+    //4
+    MineController *mineVC = [MineController new];
+    UINavigationController *mineNC = [[UINavigationController alloc]initWithRootViewController:mineVC];
+    mineVC.title = @"我的";
+    UIImage *image4 = [UIImage imageNamed:@"mine"];
+    mineVC.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"我的" image:image4 selectedImage:image4];
     
-    
-    
+    [[UINavigationBar appearance] setBarTintColor:[UIColor brownColor]];
     
     NSArray *allNC = @[discoverNC,RadioNC,playerNC,mineNC];
-    
     UITabBarController *tabBarVC = [[UITabBarController alloc]init];
-    
     
     tabBarVC.viewControllers = allNC;
     
+    tabBarVC.tabBar.barTintColor = [UIColor cyanColor];
+    tabBarVC.tabBar.tintColor = [UIColor orangeColor];
+    
     self.window.rootViewController = tabBarVC;
     
-    
-    
-    
-    
-    
+
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
