@@ -77,6 +77,7 @@
 
 -(void)all{
     DetailViewController *detail = [DetailViewController new];
+    detail.name = @"";
     [self.navigationController pushViewController:detail animated:YES];
    
 }
