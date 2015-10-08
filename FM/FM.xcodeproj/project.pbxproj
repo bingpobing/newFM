@@ -52,6 +52,7 @@
 		C255C7671BC6A98900EAF02C /* DetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C255C75B1BC6A98900EAF02C /* DetailCell.m */; };
 		C255C7681BC6A98900EAF02C /* ListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C255C75D1BC6A98900EAF02C /* ListCell.m */; };
 		C255C7691BC6A98900EAF02C /* RadioViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C255C75F1BC6A98900EAF02C /* RadioViewCell.m */; };
+		C255C76C1BC6B39700EAF02C /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C255C76B1BC6B39700EAF02C /* TestViewController.m */; };
 		C26C86CA1BC69650001ED1E1 /* bofang.png in Resources */ = {isa = PBXBuildFile; fileRef = C26C86BB1BC69650001ED1E1 /* bofang.png */; };
 		C26C86CB1BC69650001ED1E1 /* bofangyemian.png in Resources */ = {isa = PBXBuildFile; fileRef = C26C86BC1BC69650001ED1E1 /* bofangyemian.png */; };
 		C26C86CC1BC69650001ED1E1 /* diantai.png in Resources */ = {isa = PBXBuildFile; fileRef = C26C86BD1BC69650001ED1E1 /* diantai.png */; };
@@ -188,6 +189,8 @@
 		C255C75D1BC6A98900EAF02C /* ListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListCell.m; sourceTree = "<group>"; };
 		C255C75E1BC6A98900EAF02C /* RadioViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioViewCell.h; sourceTree = "<group>"; };
 		C255C75F1BC6A98900EAF02C /* RadioViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioViewCell.m; sourceTree = "<group>"; };
+		C255C76A1BC6B39700EAF02C /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		C255C76B1BC6B39700EAF02C /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		C26C86BB1BC69650001ED1E1 /* bofang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bofang.png; sourceTree = "<group>"; };
 		C26C86BC1BC69650001ED1E1 /* bofangyemian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bofangyemian.png; sourceTree = "<group>"; };
 		C26C86BD1BC69650001ED1E1 /* diantai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diantai.png; sourceTree = "<group>"; };
@@ -498,6 +501,8 @@
 				C2E35BA31BC68CA000FB1685 /* LiebiaoTableViewController.m */,
 				C2E35BA41BC68CA000FB1685 /* PlayerController.h */,
 				C2E35BA51BC68CA000FB1685 /* PlayerController.m */,
+				C255C76A1BC6B39700EAF02C /* TestViewController.h */,
+				C255C76B1BC6B39700EAF02C /* TestViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -794,6 +799,7 @@
 				C233408E1BC54E200045EA8E /* SDWebImageCompat.m in Sources */,
 				C233405A1BC54DE10045EA8E /* SettingController.m in Sources */,
 				C23340981BC54E200045EA8E /* UIImageView+HighlightedWebCache.m in Sources */,
+				C255C76C1BC6B39700EAF02C /* TestViewController.m in Sources */,
 				C2E35BA01BC670AD00FB1685 /* LoginMineController.m in Sources */,
 				C23340931BC54E200045EA8E /* SDWebImagePrefetcher.m in Sources */,
 				C23340911BC54E200045EA8E /* SDWebImageDownloaderOperation.m in Sources */,
