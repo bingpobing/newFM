@@ -8,7 +8,7 @@
 
 #import "ListViewController.h"
 
-#import "AFNetworking.h"
+
 
 #define URL @"http://mobile.ximalaya.com/mobile/others/ca/album/track/%ld/true/1/30?device=iPhone"
 
